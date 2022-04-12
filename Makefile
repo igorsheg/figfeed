@@ -12,4 +12,4 @@ server-watch-serve:
 	air
 
 start-dev:
-	make -j 3 server-watch-serve web-serve web-watch
+	make -j 2 web-watch server-watch-serve 

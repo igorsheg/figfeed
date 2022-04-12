@@ -53,7 +53,7 @@ func OauthHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	log.Println(t.AccessToken)
-	cookie := http.Cookie{Name: "figma_access_token", Value: t.AccessToken}
+	cookie := http.Cookie{Name: "figma_access_token", Value: t.AccessToken, Path: "/"}
 
 	http.SetCookie(w, &cookie)
 
